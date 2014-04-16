@@ -8,6 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="content"></div>
         <script src="markdown.js"></script>
+        <script src=zepto.min.js></script>
+        <script>
+            $.get('content.md', function(resp){
+                $(document.body).html(markdown.toHTML(resp));
+            })
+        </script>
     </body>
 </html>
