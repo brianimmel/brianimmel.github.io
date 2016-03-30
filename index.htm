@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brian Immel</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript">
+          /*
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-57989-7']);
+          _gaq.push(['_trackPageview']);
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+          */
+        </script>
+	</head>
+	<body>
+
+		<div id="outside-wrapper">
+
+			<div id="inside-wrapper" class="container_12">
+
+                <p class="grid_4 alpha" id="logo">
+					<a href="/"><img alt="Brian Immel" src="images/front.png"></a>
+				</p>
+
+				<p id="meta" class="grid_6 omega">
+					<div id="title">Hello, I'm an</div>
+					<div id="subtitle">ambitious code monkey</div>
+				</p>
+
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+
+		<div id="menu-wrapper">
+
+			<div id="menu-content" class="container_12">
+
+				<div class="menu-meta">
+
+					<div class="grid_5 prefix_1">
+						<h1><a href="/">Brian Immel</a></h1>
+					</div>
+
+					<ul class="grid_6 push_2">
+						<li><a href="#about" class="scrollable-about">About</a></li>
+						<li><a href="#work" class="scrollable-work last">Work</a></li>
+					</ul>
+
+				</div>
+
+				<div class="clear"></div>
+
+			</div><!-- end menu-content -->
+
+		</div><!-- end menu-wrapper -->
+
+		<div id="content-wrapper" class="container_12">
+
+			<div id="about" class="grid_10 prefix_1 suffix_1">
+				
+				<h2>About</h2>
+				
+                <p>
+                    I'm a senior full stack developer with experience in all stages of the product development life cycle. I thrive on solving complex problems with a mix of code, collaboration, ingenuity, and brute force.
+                </p>
+
+                <p>
+                    In my free time, I consume books and videos on organizational culture, product design, and social psychology. I also love building web apps, contributing to the Internet Of Things, voiding warranties, making green screen videos, and playing games at the nearest arcade.
+                </p>
+
+                <p>
+                    Learn more by taking a look at some of <a class="scrollable-work" href="#work">my work below</a> or my <a href="http://www.linkedin.com/in/brianimmel" target="_blank">LinkedIn page</a>.
+                </p>
+
+			</div><!-- end about -->
+			
+			<div id="work" class="grid_10 prefix_1 suffix_1">
+				
+				<h2>Work</h2>
+				
+				<ul class="thumbs">
+					<li>
+						<img src="images/tree.jpg" alt="XXX">
+						<em>Realtime Traffic LED Holiday Tree</em>
+						<strong>Electric Imp, LPD8806, IoT, animations</strong>
+					</li>
+					<li>
+						<img src="images/photobooth.jpg" alt="XXX">
+						<em>Event Photobooth</em>
+						<strong>Raspberry Pi, DSLR, Arduino, UI/UX</strong>
+					</li>
+					<li>
+						<img src="images/colororgan.jpg" alt="Playstation Color Organ">
+						<em>Playstation Color Organ</em>
+						<strong>Color Organ, Analog Electronics</strong>
+					</li>
+
+					<li>
+						<img src="images/findingtheframe.jpg" alt="Finding the Frame">
+						<em>Finding the Frame</em>
+						<strong>Django, UI/UX, MySQL</strong>
+					</li>
+					<li>
+						<img src="images/heyscorebot.png" alt="XXX">
+						<em>Hey, Scorebot!</em>
+						<strong>Twitter API, game mechanics, branding, Bootstrap CSS</strong>
+					</li>
+					<li>
+						<img src="images/mobilemoderator.png" alt="XXX">
+						<em>Mobile Moderator</em>
+						<strong>Geo Location, knowledge base, jQuery Mobile, Google App Engine</strong>
+					</li>
+
+					<li>
+						<img src="images/photosamurai2.jpg" alt="Photo Samurai">
+						<em>Photo Samurai</em>
+						<strong>Django, UI/UX, noSQL, image pipelines, contests</strong>
+					</li>
+					<li>
+						<img src="images/exposure.jpg" alt="Film: Exposure">
+						<em>Film: Exposure</em>
+						<strong>Director, Editor, film festival</strong>
+					</li>
+					<li>
+						<img src="images/videoplayer.jpg" alt="Flash Video Player">
+						<em>Embedable Multimedia Player</em>
+						<strong>Actionscript, UI/UX, monetization, analytics</strong>
+					</li>
+
+					<li>
+						<img src="images/spokesman.jpg" alt="The Spokesman-Review">
+						<em>The Spokesman-Review</em>
+						<strong>Django/Python, jQuery/JS, MySQL</strong>
+					</li>
+					<li>
+						<img src="images/nppa.jpg" alt="NPPA Multimedia Contest">
+						<em>NPPA Multimedia Contest</em>
+						<strong>PHP, UI/UX, jQuery/JS, MySQL, image pipelines, file management</strong>
+					</li>
+					<li>
+						<img src="images/cfp.png" alt="XXX">
+						<em>College Front Page</em>
+						<strong>PHP, MySQL, UI/UX, product development, scalability, PDF/image workflows</strong>
+                    </li>
+
+				</ul>
+				
+			</div><!-- end work -->
+			
+			<div class="clear"></div>
+			
+		</div><!-- end content-wrapper -->
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+
+            $('a.scrollable-about').click(function(){
+                $('body').stop().scrollTo('div#about', 800);
+                return false;
+            });
+            $('a.scrollable-work').click(function(){
+                $('body').stop().scrollTo('div#work', 800);
+                return false;
+            });
+        });
+    </script>
+	</body>
+</html>

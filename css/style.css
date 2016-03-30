@@ -1,0 +1,239 @@
+@import "grid.css";
+@import "reset.css";
+
+body
+{
+	background: #262626 url('bg_dark.gif');
+	color: #B2B2B2;
+	font: normal 20px/150% Georgia, "Times New Roman", Times, serif;
+	text-shadow: 2px 2px 0 #121212
+}
+
+h1
+{
+	color: #fff;
+}
+
+h2
+{
+    border-bottom:1px solid;
+    color:#FF6113;
+    font:bold 32px Helvetica,Arial,sans-serif;
+    margin:75px 0 10px;
+    text-transform:uppercase;
+    text-shadow:none;
+}
+	
+h2 span
+{
+    color:#B2B2B2;
+    font:17px Georgia,"Times New Roman",Times,serif;
+    text-transform:lowercase;
+}
+
+a{
+    color:#078CFE;
+}
+p { margin-bottom: 1em; }
+
+p a
+{
+	color: #078CFE;
+	text-decoration: none;
+}
+p a:hover { border-bottom-width: 2px; }
+
+#outside-wrapper
+{
+	background-color: #078CFE;
+	width: 100%;
+}
+
+#inside-wrapper
+{
+	margin: 0 auto;
+	padding-top: 80px;
+	width: 780px;
+}
+
+#inside-wrapper #logo
+{
+	height: 180px;
+	margin: 0;
+	padding: 0;
+    overflow:hidden;
+}
+
+#inside-wrapper #logo a
+{
+	border: none;
+}
+
+#inside-wrapper #meta
+{
+	margin-top: 20px;
+}
+
+#inside-wrapper #title{
+    /*
+    font: bold 40px/100% Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    */
+    color:#121212;
+    font:30px Georgia,"Times New Roman",Times,serif;
+    text-shadow:none;
+
+}
+#inside-wrapper #subtitle{
+    color:#FFFFFF;
+    font:bold 28px Georgia,"Times New Roman",Times,serif;
+    margin-top:0;
+    text-shadow:none;
+}
+#inside-wrapper strong { color: #121212; font: bold 16px Helvetica, Arial, sans-serif; text-shadow:none;  }
+#inside-wrapper strong span { color: #fff; }
+
+#menu-wrapper
+{
+	background-color: #fff;
+	border-bottom: 5px solid #000;
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+#menu-content {
+    text-shadow: none;
+}
+
+#menu-content h1 a
+{
+	color: #000;
+    display:inline-block;
+    float:left;
+    font-size:30px;
+    margin-top:10px;
+    text-decoration:none;
+}
+
+	#menu-content span
+	{
+		color: #078CFE;
+		display: block;
+		float: left;
+		font: bold 11px Helvetica, Arial, sans-serif;
+		margin: 17px 0 0 15px;
+	}
+		
+		#menu-content span a { color: #078CFE; text-decoration: none; }
+		#menu-content span a:hover { color: #fff; }
+
+#menu-content ul
+{
+	border: none;
+	width: 244px;/*366px;*/
+}
+	
+	#menu-content li
+	{
+		display: block;
+		float: left;
+		list-style-type: none;
+	}
+		
+		#menu-content li a
+		{
+			border-left:1px solid #4C4C4C;
+            display:block;
+            font-size:60%;
+            font-weight:bold;
+            padding:10px 0;
+            text-align:center;
+            text-transform:uppercase;
+            width:120px;
+            text-decoration:none;
+		}
+        #menu-content li a.last {
+            border-right:1px solid #000000;
+        }
+
+#about, #work, #contact { padding-bottom: 50px; padding-top: 50px; }
+
+#work
+{
+	font-size: 13px;
+	line-height: 150%;
+}
+	
+	.thumbs li
+	{
+		display: inline;
+		float: left;
+		list-style-type: none;
+		margin-bottom: 2em;
+		width: 260px;
+	}
+		
+    .thumbs li img {
+        width: 208px;
+        height: 105px;
+    }
+        
+		.thumbs li a img
+		{
+			border: 5px solid #ccc;
+			display: block;
+			margin-right: 40px;
+		}
+			
+			.thumbs li a:hover img
+			{
+				border: 5px solid #078CFE;
+			}
+		
+		.thumbs li em
+		{
+			display:block;
+			font-style: normal;
+			margin: 5px 5px 0 5px;
+			padding: 0;
+			width: 208px;
+		}
+			
+			.thumbs li em a
+			{
+				background: transparent url('plus-icon.gif') no-repeat center right;
+				border: none;
+				color: #b2b2b2;
+				padding-right: 20px;
+				text-decoration: none;
+			}
+				
+				.thumbs li em a:hover { color: #fff; }
+		
+		.thumbs li strong
+		{
+			font: bold 11px Helvetica, Arial, sans-serif;
+			margin: 5px 5px 0 0;
+			text-transform: uppercase;
+		}
+
+
+.success, .error { font: bold 11px Helvetica, Arial, sans-serif; }
+.success { color: #92D24D; }
+.error { color: #FF2B37; }
+
+#link-love { font: bold 11px/150% Helvetica, Arial, sans-serif; margin-top: 200px; }
+	
+	#link-love a { padding-bottom: 2px; }
+
+#footer { color: rgb(135, 137, 135); font: bold 11px/150% Helvetica, Arial, sans-serif; }
+	
+	#footer a { padding-bottom: 2px; }
+
+.alignleft { text-align: left; }
+.alignright { text-align: right; }
+.floatleft { float: left; }
+.floatright { float: right; }
